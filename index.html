@@ -19,8 +19,7 @@
 
 <body>
     <div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
-        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal"
-            data-bs-target="#modalArticulo">CREAR</button>
+        <button id="btnCrear" type="button" class="btn btn-primary" data-bs-toggle="modal">CREAR</button>
         <table id="tablaArtticulos" class="table mt-2 table-bordered table-striped">
             <thead>
                 <tr class="text-center">
@@ -38,27 +37,26 @@
 
 
 
-    <div id="modalArticulo" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div id="modalArticulo" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Articulo</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">DESCRIPCION</label>
-                            <input type="text" class="form-control" id="recipient-name">
+                            <input type="text" class="form-control" id="descripcion">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">PRECIO</label>
-                            <input type="number" class="form-control" id="recipient-name">
+                            <input type="number" class="form-control" id="precio">
                         </div>
                         <div class="mb-3">
                             <label for="recipient-name" class="col-form-label">STOCK</label>
-                            <input type="number" class="form-control" id="recipient-name">
+                            <input type="number" class="form-control" id="stock">
                         </div>
                 </div>
                 <div class="modal-footer">
