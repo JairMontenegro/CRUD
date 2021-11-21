@@ -17,5 +17,28 @@ btnCrear.addEventListener("click",()=>{
     stock.value=''
     modalArticulo.show()
     opcion = "crear"
-}
-)
+})
+
+//funcion resultados
+const mostrar = (articulos) =>{
+    articulos.forEach(articulo => {
+        resultados += `<tr>
+                            <td>${articulo.id}</td>
+                            <td>${articulo.descripcion}</td>
+                            <td>${articulo.precio}</td>
+                            <td>${articulo.stock}</td>
+                            <td class= "text-center"><a class="btnEditar btn btn-primary">Editar </a><a class="btnBorrar btn btn-primary">Borrar</a></td> 
+
+                        </tr>
+                     `
+        
+    
+})
+contenedor.innerHTML = resultados
+
+//procedimiento mostrar
+
+fetch(url)
+.then(response => response.json() )
+.then( data => mostrar (data))
+.catch(error => console.log(error))}
